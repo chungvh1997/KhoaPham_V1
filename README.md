@@ -1,3 +1,5 @@
+![htmlicon](https://dobsondev.com/wp-content/uploads/2017/05/css-featured-image-300x150.jpg "html icon")
+
 KhoaPham
 ========
 * Thuc hanh git vs github
@@ -10,6 +12,6 @@ KhoaPham
 1. html/css/bootstrap
 2. jquery/js
 3. php/laravel
-===========
-![htmlicon](https://dobsondev.com/wp-content/uploads/2017/05/css-featured-image-300x150.jpg "html icon")
+
+
 
