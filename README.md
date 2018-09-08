@@ -10,5 +10,6 @@ KhoaPham
 1. html/css/bootstrap
 2. jquery/js
 3. php/laravel
-![forking](https://raw.githubusercontent.com/NgaNguyenDuy/git_tuts/master/images/gitfork.png "Forking repo")
+===========
+![htmlicon](https://dobsondev.com/wp-content/uploads/2017/05/css-featured-image-300x150.jpg "html icon")
 
