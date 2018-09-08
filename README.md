@@ -1,4 +1,6 @@
-![htmlicon](https://dobsondev.com/wp-content/uploads/2017/05/css-featured-image-300x150.jpg "html icon")
+<p align="center"><img src="https://dobsondev.com/wp-content/uploads/2017/05/css-featured-image-300x150.jpg"></p>
+
+<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 KhoaPham
 ========
