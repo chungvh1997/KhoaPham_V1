@@ -28,19 +28,14 @@ $(document).ready(function(){
 			addDiv();
 		}
 		$(".box1").css({ "width": "100px","height": "100px","margin": "5px","float": "left","border": "1px gray solid","text-align": "center"});
-
-	 // $(".box1").click(function() {  //use a class, since your ID gets mangled
-  //   	 $( ".box1" ).each(function( index, element ) {
-		//     	 	if ( $( ".box1" ).hasClass("active")){
-		//     	 		console.log('dm click r')
-		//     	 	}else{
-		//     	 		$(this).addClass("active");  
-		//     	 	}
-
-		//     	 });
-  //   	  });
-    	
-
+			 $(".box1").click(function() {  //use a class, since your ID gets mangled
+			 		if($(this).hasClass('active')){
+			 				alert("đã click");
+			 		}else{
+			 		$(this).addClass("active"); 
+			 		}
+			 
+			 });
 
 	});
 
