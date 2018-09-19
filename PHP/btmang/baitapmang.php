@@ -10,32 +10,20 @@
 </head>
 <body>
     <div class="content">
-    	<?php 
-    	include 'mang.php';
-
-    		foreach ($arr as $key=>$value) {
-    			?>
-    			<div class="item">
-    				<div class="image">
-    					<img src="<?=$value["image"]?>">
-    				</div>
-    				<div class="info">
-    					<div class="name"><?=$value["name"];?></div>
-    					<p>Nhắn tin 5.000đ xác nhận mua hàng</p>
-    					<p class="promotion"><?=$value["promotion"];?></p>
-    				</div>
-    				<div class="price"><?=$value["price"];?></div>
-    			</div>
-    			
-    			
-
-		<?php
-    		}
-
-    		
-    	 ?>
-      
-        
-    </div>
+    	<?php include 'mang.php';
+        foreach ($arr as $key=>$value):
+       ?>
+       <div class="item">
+        <div class="image">
+           <img src="<?=$value["image"]?>">
+       </div>
+       <div class="info">
+           <div class="name"><?=$value["name"];?></div>
+           <p class="promotion"><?=$value["promotion"];?></p>
+       </div>
+       <div class="price"><?=$value["price"];?></div>
+   </div>
+   <?php endforeach ?>
+</div>
 </body>
 </html>
