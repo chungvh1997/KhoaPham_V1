@@ -1,6 +1,4 @@
-$(document).ready(function(){
-	
-
+$(document).ready(function(){	
 	$( "#color" ).click(function() {
 		$( ".box1" ).each(function( index, element ) {
 				    // element == this
@@ -13,9 +11,6 @@ $(document).ready(function(){
 		
 	});
 	var smallDiv = '<div class="box1"></div>';	
-
-
-
 	function addDiv() {
 		$('#container').append(smallDiv);
 	}
@@ -27,12 +22,13 @@ $(document).ready(function(){
 		for (i = 0; i <= iNum; i++){
 			addDiv();
 		}
-		$(".box1").css({ "width": "100px","height": "100px","margin": "5px","float": "left","border": "1px gray solid","text-align": "center"});
+		$(".box1").css({ "width": "100px","height": "100px","margin": "5px","float": "left","border": "1px gray solid","text-align": "center","font-size": "100px"});
 			 $(".box1").click(function() {  //use a class, since your ID gets mangled
 			 		if($(this).hasClass('active')){
 			 				alert("đã click");
 			 		}else{
 			 		$(this).addClass("active"); 
+			 		$(this).html("x"); 
 			 		}
 			 
 			 });

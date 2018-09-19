@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<p>Price:<label id="price">10</label></p>
+	<button id="giam">-</button>
+	<button id="tang">+</button>
+
+	<script>
+		$(document).ready(function(){	
+			
+			var num= $("#price").text();
+			$("#tang").click(function() {
+
+				num++;
+				$("#price").html(num);
+				console.log(num);
+				if(num>=0){
+					$("#giam").show();
+					console.log("show");
+				}
+			});
+				$("#giam").click(function() {
+				num--;
+				$("#price").html(num);
+				console.log(num);
+				if(num<=0){
+					alert("message?: DOMString");
+					$("#giam").hide();
+				}
+
+			});
+
+			
+		});
+	</script>
+</body>
+</html>
