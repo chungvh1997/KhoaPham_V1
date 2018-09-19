@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<style>
+    input{
+        width: 100px
+    }
+</style>
+<body>
+    
+    <input type="text" placeholder="So a" id="txtSoa" >
+    <select id="slPheptinh">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="text" placeholder="So b" id="txtSob" >
+    <button id="btnTinh" >Tinh</button>
+    <input type="text" placeholder="Ket qua" id="txtKetqua" readonly>
+
+</body>
+
+<script >
+    $(document).ready(function(){
+    $("button").click(function(){
+       // alert("Value: " + $("#test").val());
+        var txtSoa = $("#txtSoa").val();
+        console.log(txtSoa);
+    });
+});
+
+   /* function calculator(){
+        var txtSoa = document.getElementById('txtSoa')
+        var txtSob = document.getElementById('txtSob')
+        var pt = document.getElementById('slPheptinh').value
+        var txtKq = document.getElementById('txtKetqua')
+
+        var soA = parseFloat(txtSoa.value) // Number(txtSoa.value)
+        var soB = parseFloat(txtSob.value)
+
+        console.log((soA))
+        if(isNaN(soA)){
+            alert('Nhap A')
+            txtSoa.value = ''
+            txtSoa.focus()
+            return false;
+        }
+        if(isNaN(soB)){
+            alert('Nhap B')
+            txtSob.value = ''
+            txtSob.focus();
+            return false;
+        }
+        if(pt=='+'){
+            txtKq.value = soA + soB
+        }
+        if(pt=='-'){
+            txtKq.value = soA - soB
+        }
+        if(pt=='*'){
+            txtKq.value = soA * soB
+        }
+        if(pt=='%'){
+            txtKq.value = soA % soB
+        }
+        if(pt=='/'){
+            if(soB==0){
+                alert('b <> 0 ')
+                txtSob.value = ''
+                txtSob.focus();
+                return false;
+            }
+            txtKq.value = (soA/soB).toFixed(2); 
+        }
+
+
+    }*/
+</script>
+
+</html>
