@@ -12,6 +12,7 @@
     <div class="content">
     	<?php include 'mang.php';
         foreach ($arr as $key=>$value):
+        
        ?>
        <div class="item">
         <div class="image">
