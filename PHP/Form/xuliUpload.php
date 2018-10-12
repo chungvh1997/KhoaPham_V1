@@ -16,7 +16,7 @@ if($image["error"]>0){
 
 
 //kiem tra file size
-if($image["size"]>100000){
+if($image["size"]>100.000){
 	echo "maxx";
 	$uploadOk=0;
 }

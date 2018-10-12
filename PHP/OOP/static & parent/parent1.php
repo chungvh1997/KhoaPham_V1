@@ -4,7 +4,7 @@ require "parent.php";
 class lion extends cat{
 //override height
 	private $__height=30;
-
+	public $__name="meocon";
 	
 //sử dụng parent
 	public function getInfo1(){
@@ -13,6 +13,7 @@ class lion extends cat{
 	}
 //sử dụng parent gọi biến age lưu ý biến age phải là static
 public function getInfo(){
+		
 		echo parent::$__age."</br>";
 		//gọi fuction tu lop cha không cần static
 		parent::getName();
@@ -27,7 +28,7 @@ public function getInfo(){
 
 $lionA = new lion();
 
-$lionA->getInfo1();
+// $lionA->getInfo1();
 $lionA->getInfo();
 
 

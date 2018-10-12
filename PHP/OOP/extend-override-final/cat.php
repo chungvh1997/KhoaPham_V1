@@ -1,7 +1,7 @@
 <?php 
 class cat{
 	private $__name;
-	private $__color;
+	private $__color="ss";
 	private $__age;
 
 

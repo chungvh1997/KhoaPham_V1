@@ -1,6 +1,6 @@
 <?php 
 class cat{
-	public $__name="meo";
+	public $__name="meocha";
 	public $__color="yellow";
 	static $__age=1;
 	public function getName(){

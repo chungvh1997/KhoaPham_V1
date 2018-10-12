@@ -1,5 +1,6 @@
 <?php 
 class demo{
+	//static giu nguyen gia tri
 	static $meo="dog";
 	static $chuot="chuot chu";
 	//sử dụng self giống như this cho static
