@@ -1,0 +1,25 @@
+$(function ()
+{
+    function u(n)
+    {
+        for (var r, u = window.location.search.substring(1), i = u.split("&"), t = 0; t < i.length; t++)
+            if (r = i[t].substring(0, i[t].indexOf("=")), r.toLowerCase() === n.toLowerCase())
+                return i[t].substring(i[t].indexOf("=") + 1)
+    }
+    var i = document.querySelector("#mainPlayer"),
+        r = new Dash.di.DashContext
+        , n = new MediaPlayer(r)
+        ,
+        t;
+    n.startup();
+    n.attachView(i);
+    n.setAutoPlay(!0);
+    n.setAutoSwitchQuality(!0);
+    t = u("url");
+    !t || (document.querySelector("#manifestUrl").value = t
+    , n.attachSource(t));
+    $("#loadManifest").click(function () {
+        var t = document.querySelector("#manifestUrl").value;
+        !t || n.attachSource(t)
+    })
+})
